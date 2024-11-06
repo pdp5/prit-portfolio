@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #0080ff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .navbar {
   background-color: #333333;
@@ -13,6 +16,8 @@ body {
   box-sizing: border-box;
   width: 100%;
   top: 0;
+  /* border-bottom: 2px solid black; */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 .navbar h2 {
   color: white;
@@ -30,6 +35,9 @@ body {
   gap: 20px;
   margin-left: auto;
 }
+.navbar menu h2 {
+  font-weight: 100;
+}
 main {
   padding-top: 90px;
   width: 70%;
@@ -37,19 +45,24 @@ main {
   margin-right: auto;
   background-color: #1034a6;
   color: white;
-  margin-bottom: 0;
+  margin-bottom: 0px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.34);
+  padding-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.467);
+  padding: 90px 40px 0 40px;
 }
 main .main-content {
   display: flex;
 }
 main .about-me {
-  width: 70%;
-  padding-left: 40px;
+  width: 80%;
+  /* padding-left: 40px; */
   padding-right: 5px;
   /* background-color: rgb(93, 102, 110); */
 }
 main .main-content .about-me h1 {
   font-size: 5vh;
+  text-decoration: underline;
 }
 
 main .main-content .about-me p {
@@ -61,10 +74,11 @@ main .my-picture {
   align-content: center;
 }
 main .my-picture img {
-  height: 250px;
+  height: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 5%;
 }
 .quote {
   text-align: center;
@@ -74,13 +88,18 @@ main .my-picture img {
 }
 footer {
   background-color: #333333;
-  padding: 5px;
+  padding: 2px 5px;
   display: flex;
   gap: 20px;
   position: fixed;
   bottom: 0;
   width: 100%;
   justify-content: center;
+  box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.3);
+}
+footer h3 {
+  font-weight: 100;
+  font-size: 1vh;
 }
 footer a {
   color: white;
@@ -89,4 +108,91 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+/*About page styling*/
+main .about-page-header h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+main .volleyball,
+main .music {
+  margin-top: 30px;
+}
+main .music {
+  margin-bottom: 100px;
+}
+main .volleyball .volleyball-detail-picture-container,
+main .music .music-detail-picture-container {
+  display: flex;
+  margin-bottom: 30px;
+}
+main .volleyball .volleyball-detail-picture-container .volleyball-detail,
+main .music .music-detail-picture-container .music-detail {
+  width: 70%;
+  margin-right: 20px;
+  font-size: larger;
+}
+main .volleyball .volleyball-detail-picture-container .volleyball-picture,
+main .music .music-detail-picture-container .music-picture {
+  margin: 0 auto;
+  /* background-color: #fafafa; */
+}
+main .volleyball .volleyball-detail-picture-container .volleyball-picture img,
+main .music .music-detail-picture-container .music-picture img {
+  height: 200px;
+}
+main .music .music-detail-picture-container .music-picture img {
+  width: 350px;
+}
+/*Portfolio Page Styling*/
+main .portfolio-page-header h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+main .project-1,
+main .project-2,
+main .project-3 {
+  background-color: #fafafa;
+  color: black;
+  padding: 10px;
+  margin: 30px 30px;
+}
+main .project-3 {
+  margin-bottom: 100px;
+}
+main .project-1 h2,
+main .project-2 h2,
+main .project-3 h2 {
+  margin: auto;
+  font-size: xx-large;
+}
+main .project-1 .project-info-video-container,
+main .project-2 .project-2-info-picture-container,
+main .project-3 .project-3-info-picture-container {
+  display: flex;
+}
+main .project-1 .project-info-video-container .info,
+main .project-2 .project-2-info-picture-container .info,
+main .project-3 .project-3-info-picture-container .info {
+  /* background-color: aqua; */
+  width: 80%;
+  margin-right: 10px;
+  font-size: large;
+}
+main .project-1 .project-info-video-container .info ul li,
+main .project-2 .project-2-info-picture-container .info ul li,
+main .project-3 .project-3-info-picture-container .info ul li {
+  margin-bottom: 10px;
+}
+main .project-1 .project-info-video-container .project-1-demo-video,
+main .project-2 .project-2-info-picture-container .project-2-picture,
+main .project-3 .project-3-info-picture-container .project-3-picture {
+  /* background-color: rgb(53, 76, 76); */
+  margin: auto 0;
+}
+main .project-1 .project-1-demo-video video,
+main .project-2 .project-2-info-picture-container .project-2-picture img,
+main .project-3 .project-3-info-picture-container .project-3-picture img {
+  height: 200px;
+  border-radius: 10px;
 }

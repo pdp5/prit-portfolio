@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Page</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -18,7 +19,111 @@
       </nav>
     </header>
     <main>
-      <h1>Portfolio Page</h1>
+      <header class="portfolio-page-header">
+        <h1>Portfolio Page</h1>
+      </header>
+      <hr />
+      <section class="project-1">
+        <h2>InvestEase</h2>
+        <hr />
+        <div class="project-info-video-container">
+          <div class="info">
+            <ul>
+              <li>
+                Contributed in developing a web-based educational app guiding
+                users in making informed investment decisions based on risk
+                profiles. Providing foundational investing knowledge for
+                beginners, significantly reducing user effort by 25%.
+              </li>
+              <li>
+                Developed backend functionalities in Flask for user signup,
+                authentication, and MongoDB database management, including
+                schema creation and password management with email verification
+                for enhanced security.
+              </li>
+              <li>
+                Developed UI interfaces using Typescript, HTML, and CSS for
+                password reset, landing, questionnaire, and result pages,
+                enhancing the landing page with ScrollReveal for dynamic effects
+                and LottieFiles animations for visual engagement.
+              </li>
+            </ul>
+          </div>
+          <div class="project-1-demo-video">
+            <video src="./assets/demo.mp4" controls></video>
+          </div>
+        </div>
+      </section>
+      <section class="project-2">
+        <h2>Typing Game</h2>
+        <hr />
+        <div class="project-2-info-picture-container">
+          <div class="info">
+            <ul>
+              <li>
+                Developed a responsive word falling game from scratch within a
+                five-week timeframe, aimed at enhancing users’ typing skills.
+              </li>
+              <li>
+                Utilized React.js and Bootstrap for the front end and Auth0 for
+                user authentication.
+              </li>
+              <li>
+                Implemented Vanilla.js for the backend to manage game logic and
+                interactions, ensuring a smooth gaming experience.
+              </li>
+            </ul>
+          </div>
+          <div class="project-2-picture">
+            <img src="./assets/Typing-Game.png" alt="Project 02 Picture" />
+          </div>
+        </div>
+      </section>
+      <section class="project-3">
+        <h2>YouTube Video Search</h2>
+        <hr />
+        <div class="project-3-info-picture-container">
+          <div class="info">
+            <ul>
+              <li>
+                Engineered a Python API to systematically download 50 youTube
+                videos and closed caption.
+              </li>
+              <li>
+                Implemented a video processing pipeline utilizing OpenCV,
+                ffmpeg, and PyTorchVideo.
+              </li>
+              <li>
+                Utilized PostgreSQL vector database for storing preprocessed
+                frames as vector embedding using Word2Vec, thereby creating a
+                unified storage solution.
+              </li>
+              <li>
+                Used dot product functionality to combine frames and transcripts
+                vector embedding techniques for efficient and accurate video
+                search. Implemented cosine similarity search on the GUI to
+                achieve this.
+              </li>
+            </ul>
+          </div>
+          <div class="project-3-picture">
+            <img
+              src="./assets/YouTube-Video-Search-Picture.png"
+              alt="Project 3 Picture"
+            />
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <h3><a href="https://github.com/pdp5" target="_blank">GitHub</a></h3>
+      <h3>
+        <a
+          href="https://www.linkedin.com/in/prit-patel-485654268/"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </h3>
+    </footer>
   </body>
 </html>
