@@ -40,7 +40,7 @@ body {
 }
 main {
   padding-top: 90px;
-  width: 70%;
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto;
   background-color: #1034a6;
@@ -195,4 +195,63 @@ main .project-2 .project-2-info-picture-container .project-2-picture img,
 main .project-3 .project-3-info-picture-container .project-3-picture img {
   height: 200px;
   border-radius: 10px;
+}
+
+/* Contact Page Styling */
+#form {
+  /* height: 100px; */
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px;
+  /* height: 100vh; */
+  width: 1000px;
+  /* background-color: aqua; */
+  background: rgba(239, 218, 218, 0.8);
+  max-width: 80%;
+  margin: 50px auto;
+  border: solid 2px black;
+  border-radius: 10px;
+}
+#form label {
+  font-size: 25px;
+  margin: 10px 0;
+  color: black;
+}
+#form input,
+#form textarea {
+  font-size: 20px;
+  padding: 5px 10px;
+  border: solid 2px black;
+  transition: border 0.1s ease;
+}
+#form textarea {
+  max-width: 100%;
+}
+#form textarea:hover,
+#form input:hover {
+  border: double 5px green;
+}
+#form button {
+  margin: 10px auto;
+  margin-top: 30px;
+  font-size: 25px;
+  border: solid 2px black;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+#form button:hover {
+  background-color: aqua;
+  transform: scale(1.1);
+  font-weight: 500;
+  color: black;
+  border: double 4px black;
+}
+/* success page styling */
+main .success-heading {
+  /* background-color: #fafafa; */
+  height: 78vh;
+  width: 1000px;
+  text-align: center;
+  font-size: 7vh;
 }
