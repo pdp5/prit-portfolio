@@ -1,4 +1,4 @@
-# [prit-portfolio] (https://pdp5.github.io/prit-portfolio) <br/>
+# [prit-portfolio](https://pdp5.github.io/prit-portfolio) <br/>
 This repo contains the code for my portfolio website. My portfoio consist of Home page, About page, and Portfolio page. <br/>
 
 Home Page 🏠 <br/>
